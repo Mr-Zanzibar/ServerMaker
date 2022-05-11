@@ -80,7 +80,6 @@ def session_start_route():
 						else:
 							session['servers'] = []
 
-						# domains
 						cursor.execute("SELECT domains FROM userdata WHERE email=" + "'" + email_form + "'")
 						connection.commit()
 						domains_data = cursor.fetchone()
